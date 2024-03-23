@@ -2,9 +2,8 @@ import React from "react";
 import "./Table.css";
 import Delete from "./icons/delete.png";
 import Edit from "./icons/edit.png";
-
 function Table({ data }) {
-  const currDate = new Date().toLocaleDateString("en_IN");
+  const currDate = new Date().toLocaleDateString("de-DE");
 
   return (
     <div className="task-table">
