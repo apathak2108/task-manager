@@ -1,0 +1,29 @@
+.task-table {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 40px;
+}
+table {
+    width: 80%;
+    border-collapse: collapse;
+    
+    
+}
+th {
+    background-color: #cbd3d3;
+    font-size: 17px;
+}
+tr {
+    text-align: center;
+}
+#delete-btn, #edit-btn {
+    height: 25px;
+    margin: 7px;
+}
+#delete-btn, #edit-btn:hover {
+    cursor: pointer;
+}
+tbody {
+    background-color: #f7fafa;
+}

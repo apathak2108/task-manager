@@ -1,0 +1,19 @@
+button {
+    width: 15%;
+    height: 31px;
+    border-radius: 4px;
+    border: none;
+    background-color: #67a3a5;
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: bold;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+button:hover {
+    background-color: #5f9ea0;
+    cursor: pointer;
+}
