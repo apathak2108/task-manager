@@ -2,8 +2,9 @@ import React from "react";
 import "./Table.css";
 import Delete from "./icons/delete.png";
 import Edit from "./icons/edit.png";
-function Table({ data }) {
-  const currDate = new Date().toLocaleDateString("de-DE");
+
+function Table({ data, onDelete, onEdit }) {
+  const currDate = new Date().toLocaleDateString("en-IN");
 
   return (
     <div className="task-table">
@@ -15,14 +16,25 @@ function Table({ data }) {
           <th>Action</th>
         </thead>
         <tbody>
-          {data?.map((v, i) => (
-            <tr key={i}>
-              <td>1</td>
+          {data?.map((value, index) => (
+            <tr key={index}>
+              <td>{index + 1}</td>
               <td>{currDate}</td>
-              <td>{v}</td>
+              <td>{value}</td>
+
               <td>
-                <img src={Delete} id="delete-btn" />
-                <img src={Edit} id="edit-btn" />
+                <img
+                  src={Delete}
+                  id="delete-btn"
+                  onClick={() => onDelete(index)}
+                  alt="Delete"
+                />
+                <img
+                  src={Edit}
+                  id="edit-btn"
+                  onClick={() => onEdit(index, value)}
+                  alt="Edit"
+                />
               </td>
             </tr>
           ))}

@@ -1,11 +1,11 @@
 import React from "react";
 import "./Button.css";
 
-function Button({ handleAdd }) {
+function Button({ className, label, onClick }) {
   return (
-    <div className="btn">
-      <button className="submit-btn" onClick={handleAdd} >
-        Add Task
+    <div className="main-btn">
+      <button className={className} onClick={onClick}>
+        {label}
       </button>
     </div>
   );
