@@ -1,19 +1,37 @@
-button {
-    width: 15%;
-    height: 31px;
-    border-radius: 4px;
-    border: none;
-    background-color: #67a3a5;
-    color: aliceblue;
-    font-size: 16px;
-    font-weight: bold;
+.add-task-btn {
+  width: 15%;
+  height: 31px;
+  border-radius: 4px;
+  border: none;
+  padding-top: 6px;
+  background-color: #67a3a5;
+  color: aliceblue;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
 }
-.btn {
-    display: flex;
-    justify-content: center;
-    margin-top: 32px;
-}
+
 button:hover {
-    background-color: #5f9ea0;
-    cursor: pointer;
+  background-color: #5f9ea0;
+  cursor: pointer;
+}
+
+.main-btn {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.add-input-field-btn {
+  background-color: #67a3a5;
+  border: none;
+  color: whitesmoke;
+  border-radius: 2px;
+  margin-top: 22px;
+  width: 2.5%;
+  height: 25px;
+  font-weight: bold;
+  font-size: 17px;
 }
