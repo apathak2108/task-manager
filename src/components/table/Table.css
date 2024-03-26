@@ -7,16 +7,19 @@
 table {
     width: 80%;
     border-collapse: collapse;
-    border: none;
-    
-    
+    border: none;    
+}
+li::marker {
+    padding-left: 10px;
 }
 th {
     background-color: #cbd3d3;
     font-size: 17px;
+    padding: 7px;
 }
 tr {
     text-align: center;
+    /* padding-left: 20px; */
     background-color: #f5f6f6;
 }
 #delete-btn, #edit-btn {
@@ -29,3 +32,4 @@ tr {
 tbody {
     background-color: #f7fafa;
 }
+

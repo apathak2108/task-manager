@@ -1,6 +1,51 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #eaeded;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #eaeded;
+}
+
+.register-container,
+.login-container {
+  width: 50%;
+  margin: 100px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  text-align: center;
+  color: gray;
+  font-size: larger;
+}
+
+#name,
+#email,
+#password {
+  width: 98%;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.auth-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background-color: #67a3a5;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.anchor-tag {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: blue;
+    font-size: small;
+    margin-top: 10px;
 }
