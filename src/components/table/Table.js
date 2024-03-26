@@ -20,7 +20,13 @@ function Table({ data, onDelete, onEdit }) {
             <tr key={index}>
               <td>{index + 1}</td>
               <td>{currDate}</td>
-              <td>{value}</td>
+              <td>
+                {value?.todos?.map((todo) => (
+                  <ul className="ul">
+                    <li>{todo.value}</li>
+                  </ul>
+                ))}
+              </td>
 
               <td>
                 <img
