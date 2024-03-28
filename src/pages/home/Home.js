@@ -3,6 +3,7 @@ import Header from "../../components/Header";
 import Input from "../../components/input/Input";
 import Table from "../../components/table/Table";
 import Button from "../../components/button";
+import Quotes from "../../components/quotes/Quotes";
 
 function Home() {
   const [data, setData] = useState([]);
@@ -57,6 +58,7 @@ function Home() {
   return (
     <div className="App">
       <Header />
+      <Quotes />
       {inputFields.map((field) => (
         <Input
           key={field.id}
