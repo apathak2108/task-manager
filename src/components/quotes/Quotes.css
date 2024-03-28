@@ -1,0 +1,11 @@
+p {
+  font-size: 18px;
+  padding-top: 12px;
+  text-align: center;
+  font-weight: bold;
+  color: antiquewhite;
+}
+
+#author-name {
+  font-size: 14px;
+}
