@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { json } from "react-router-dom";
 import "./Quotes.css";
 
 function Quotes() {
